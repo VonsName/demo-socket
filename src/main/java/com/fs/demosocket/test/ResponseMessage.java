@@ -1,9 +1,12 @@
-package com.fs.demosocket;
+package com.fs.demosocket.test;
 
-public class AricResponse {
+/**
+ * Created by sang on 16-12-22.
+ */
+public class ResponseMessage {
     private String responseMessage;
 
-    public AricResponse(String responseMessage) {
+    public ResponseMessage(String responseMessage) {
         this.responseMessage = responseMessage;
     }
 

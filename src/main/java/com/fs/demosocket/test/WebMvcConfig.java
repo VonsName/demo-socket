@@ -1,18 +1,16 @@
-package com.fs.demosocket;
+package com.fs.demosocket.test;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * @author Administrator
+ * Created by sang on 16-12-22.
  */
-@Controller
+@Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/webSocket").setViewName("/webSocket");
-        registry.addViewController("/login").setViewName("/login");
-        registry.addViewController("/chat").setViewName("/chat");
+        registry.addViewController("/ws").setViewName("/ws");
     }
 }
